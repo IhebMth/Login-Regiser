@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Dancing+Script:wght@700&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+::before,::after {
+    box-sizing:border-box;
+}
+
+:root
+{
+    --main-color : #000000;
+    --main-backgroundColor : #000000;
+    --second-backgroundColor : #1AEBB6;
+    --third-backgroundColor :    #FFFFFF;
+}
+
+.ground
+{
+    display: flex;
+    flex-direction: row;
+ 
+    height: 691px;
+   
+}
+
+.ground .one
+{
+    max-width: 30%;
+    flex:  0 0 30%;
+    height: 100%;
+    background-color: var(--second-backgroundColor);
+    
+}
+
+.ground .two
+{
+    max-width: 70%;
+    flex:  0 0  70%;
+    background-color: var(--third-backgroundColor);
+    height: 100%;
+}
+
+
+
+.one .left-side
+{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+  
+   margin-left: 10%;
+   margin-right: 0%;
+    margin-top: 15.3%;
+    
+    box-shadow: 0px 0px 10px 0 #7c7777;
+    
+}
+
+.left-side i
+{
+    color: var(--main-backgroundColor);
+    padding: 10px;
+    font-size: 5vw;
+  
+}
+
+.left-side .logo-header
+{
+    font-size: 2.8vw;
+     font-weight: 700;
+    font-style: italic;
+}
+
+.left-side p
+{
+    padding-left: 10% ;
+    padding-right: 10%;
+    text-align: center;
+    font-size: 1.8vw;
+  
+    max-width: 60%;
+
+    
+}
+
+.two .right-side
+{
+   
+    height: 600px;
+    margin-top: 6.6%;
+    margin-left: 0%;
+    width: 90%;
+    box-shadow: 0px 0px 10px 0 #7c7777;   
+  ;
+}
+
+.login-form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+    font-size: 14px;
+    position: relative;
+    padding-top: 150px;
+    padding-top: auto;
+    padding-left: 100px auto;
+    padding-right: 100px auto;
+    font-weight: 500;
+    
+  
+}
+
+@media (max-width: 691px) {
+    .login-form
+    {
+        padding-top: 230px;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .login-form
+    {
+        padding-top: 260px;
+    }
+}
+
+.login-form a 
+{
+    text-decoration: none;
+
+}
+
+.login-form a:link, 
+.login-form a:visited
+{
+    color: black;
+    font-weight: 600;
+    font-size: 1.2vw;
+    width: auto;
+}
+
+.login-form a:hover
+{
+    color: var(--second-backgroundColor);
+}
+.login-form .help
+{
+    position: absolute;
+    right: 2vw;
+    top: 2vw;
+}
+
+.login-form .title
+{
+   
+    position: absolute;
+     top: 80px;
+    font-size: 2.8vw;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.login-form .mail
+{
+   
+    padding-right: 24vw;
+    font-size: 1.6vw;
+}
+
+.login-form .password
+{
+    padding-right: 21.3vw;
+    font-size: 1.6vw;
+}
+
+.login-form input
+{
+    width:  30vw;
+    padding: 1vw;
+    margin: 10px;
+    border: 1px solid #2E1056 ;
+    text-indent: 10px;
+    font-size: 1.4vw;
+    margin-bottom: 3vw;
+}
+
+.login-form input:focus
+{
+    border: none;
+    box-shadow: 0 0 10px var(--main-backgroundColor);
+    
+}
+
+.login-form .resetPass
+{
+  padding-left: 20vw;
+}
+
+.login-form .btn input
+{
+    background-color:  var(--second-backgroundColor);
+    cursor: pointer;
+}
+
+.eyes
+{
+ padding-left: 27vw;
+ margin-top: -5.4vw;
+ padding-bottom: 2vw;
+ cursor: pointer;
+ font-size: 1.2vw
+}
+
+.eyes i
+{
+   
+   
+}
+
+
+.opened-eyeP
+{
+  display:none   
+}
+
+.error 
+{
+     
+    margin-bottom: 1vw;
+    font-size: 1.4vw;
+    width: 24vw;
+    text-align: center;
+    padding: 1vw;
+    
+}
+
+.email-error
+{
+    margin-top: -2vw;
+    margin-bottom: 1vw;
+}
+
+
+.register
+{
+    position: absolute;
+    right: 2.5vw;
+    bottom: 3vw;
+}
